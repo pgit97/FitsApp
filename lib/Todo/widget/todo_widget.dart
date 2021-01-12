@@ -75,7 +75,7 @@ class TodoWidget extends StatelessWidget {
                     fontSize: 22,
                   ),
                 ),
-                if (todo.description.isNotEmpty)
+                (todo.description.isNotEmpty)?
                   Container(
                     margin: EdgeInsets.only(top: 4),
                     child: Text(
@@ -83,6 +83,8 @@ class TodoWidget extends StatelessWidget {
                       style: TextStyle(fontSize: 20, height: 1.5),
                     ),
                   )
+                    : Container(),
+
               ],
             ),
           ),

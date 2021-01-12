@@ -11,20 +11,37 @@ import 'home_page.dart';
 //   runApp(FitsTodo());
 // }
 
-class FitsTodo extends StatelessWidget {
-  Future main() async {
-    WidgetsFlutterBinding.ensureInitialized();
-    await Firebase.initializeApp();
 
-  }
+
+
+class FitsTodo extends StatefulWidget {
+
+
   static final String title = 'Todo App With Firebase';
+
+  @override
+  _FitsTodoState createState() => _FitsTodoState();
+}
+
+class _FitsTodoState extends State<FitsTodo> {
+  @override
+
+  void initState() {
+
+    // TODO: implement initState
+    super.initState();
+   this.initFirebase();
+  }
+ Future<void> initFirebase()async{
+   await Firebase.initializeApp();
+ }
 
   @override
   Widget build(BuildContext context) => ChangeNotifierProvider(
     create: (context) => TodosProvider(),
     child: MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: title,
+      title: FitsTodo.title,
       theme: ThemeData(
         primarySwatch: Colors.pink,
         scaffoldBackgroundColor: Color(0xFFf6f5ee),
