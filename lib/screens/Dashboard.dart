@@ -46,12 +46,12 @@ class _DashboardState extends State<Dashboard> {
               children: <Widget>[
                Center(
                  child: RaisedButton(
-            color: Colors.deepPurple,
+            color: Colors.blue,
                       child: Row(
                    children: <Widget>[
                          Text('Workout',
                   style: TextStyle(
-                  color: Colors.white
+                  color: Colors.pink
              ),
                      ),
           ],
@@ -60,7 +60,7 @@ class _DashboardState extends State<Dashboard> {
                        Navigator.push(
                        context,
                      MaterialPageRoute(
-                    builder: (context) => InputPage()),
+                    builder: (context) =>HomePage() ),
 
                        );
     },
@@ -70,18 +70,18 @@ class _DashboardState extends State<Dashboard> {
               mainAxisAlignment: MainAxisAlignment.center,
             ),
             SizedBox(
-              height:200.0,
+              height:100.0,
             ),
             Row(
               children: <Widget>[
                 Center(
                   child: RaisedButton(
-                    color: Colors.deepPurple,
+                    color: Colors.blue,
                     child: Row(
                       children: <Widget>[
-                        Text('Workout',
+                        Text('Calculate BMI',
                           style: TextStyle(
-                              color: Colors.white
+                              color: Colors.pink
                           ),
                         ),
                       ],
@@ -90,7 +90,7 @@ class _DashboardState extends State<Dashboard> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => HomePage()),
+                            builder: (context) => InputPage()),
                       );
                     },
                   ),
@@ -98,16 +98,19 @@ class _DashboardState extends State<Dashboard> {
               ],
               mainAxisAlignment: MainAxisAlignment.center,
             ),
+            SizedBox(
+              height:100.0,
+            ),
             Row(
               children: <Widget>[
                 Center(
                   child: RaisedButton(
-                    color: Colors.deepPurple,
+                    color: Colors.blue,
                     child: Row(
                       children: <Widget>[
-                        Text('track Hospital nearby',
+                        Text('Todo',
                           style: TextStyle(
-                              color: Colors.white
+                              color: Colors.pink
                           ),
                         ),
                       ],

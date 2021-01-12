@@ -4,16 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'home_page.dart';
 
-// Future main() async {
-//   WidgetsFlutterBinding.ensureInitialized();
-//   await Firebase.initializeApp();
-//
-//   runApp(FitsTodo());
-// }
-
-
-
-
 class FitsTodo extends StatefulWidget {
 
 

@@ -1,4 +1,7 @@
+import 'package:fitsApp/screens/home_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'BMI/home.dart';
 
 class NavDrawer extends StatelessWidget {
   @override
@@ -35,29 +38,28 @@ class NavDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.input),
-            title: Text('Welcome'),
-            onTap: () => {},
-          ),
-          ListTile(
-            leading: Icon(Icons.verified_user),
-            title: Text('Profile'),
+            title: Text('Dashboard'),
             onTap: () => {Navigator.of(context).pop()},
           ),
           ListTile(
-            leading: Icon(Icons.settings),
-            title: Text('Settings'),
-            onTap: () => {Navigator.of(context).pop()},
+            leading: Icon(Icons.fitness_center),
+            title: Text('Workout'),
+            onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()),),
+            },
           ),
           ListTile(
-            leading: Icon(Icons.border_color),
-            title: Text('Feedback'),
+            leading: Icon(Icons.local_hospital),
+            title: Text('Calculate BMI'),
+            onTap: () =>
+            {Navigator.push(context, MaterialPageRoute(builder: (context) => InputPage()),),
+            },
+          ),
+               ListTile(
+                      leading: Icon(Icons.border_color),
+                     title: Text('Feedback'),
             onTap: () => {Navigator.of(context).pop()},
           ),
-          ListTile(
-            leading: Icon(Icons.exit_to_app),
-            title: Text('Logout'),
-            onTap: () => {Navigator.of(context).pop()},
-          ),
+
         ],
       ),
     );
