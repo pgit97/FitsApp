@@ -1,0 +1,46 @@
+name: fitsApp
+description: A new Flutter project.
+version: 1.0.0+1
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  cached_network_image: ^2.2.0+1
+  introduction_screen: ^1.0.8
+  sleek_circular_slider: ^1.1.0
+  rounded_loading_button: ^1.0.0
+  audioplayers: ^0.15.1
+  animated_text_kit: ^2.0.1
+  http: ^0.12.1
+  # firebase integration
+  firebase_core: ^0.5.2+1
+  cloud_firestore: ^0.14.3+1
+
+  # slidable
+  flutter_slidable: ^0.5.7
+  # state management
+  provider: ^4.3.2+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_launcher_icons: ^0.7.5
+  flutter_local_notifications: ^3.0.2
+  font_awesome_flutter:
+
+
+flutter_icons:
+  android: true
+  image_path: "assets/"
+
+
+flutter:
+  uses-material-design: true
+  assets:
+   - assets/
+

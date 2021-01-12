@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "959076232974",
+    "project_id": "fitstodo",
+    "storage_bucket": "fitstodo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959076232974:android:8aef401964c58f935db15f",
+        "android_client_info": {
+          "package_name": "com.example.fitness_lakh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959076232974-901jo80aa7m771mr2a1r6et8aj8l0npg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxX9N91z5GNHruuei7jiNtolOD_EouS5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959076232974-901jo80aa7m771mr2a1r6et8aj8l0npg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
