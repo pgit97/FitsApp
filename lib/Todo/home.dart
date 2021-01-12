@@ -16,15 +16,15 @@ class FitsTodo extends StatefulWidget {
 class _FitsTodoState extends State<FitsTodo> {
   @override
 
-  void initState() {
-
-    // TODO: implement initState
-    super.initState();
-   this.initFirebase();
-  }
- Future<void> initFirebase()async{
-   await Firebase.initializeApp();
- }
+ //  void initState() {
+ //
+ //    // TODO: implement initState
+ //    super.initState();
+ //   this.initFirebase();
+ //  }
+ // Future<void> initFirebase()async{
+ //   await Firebase.initializeApp();
+ // }
 
   @override
   Widget build(BuildContext context) => ChangeNotifierProvider(

@@ -1,11 +1,11 @@
+import 'package:fitsApp/Todo/api.dart';
+import 'package:fitsApp/Todo/todo.dart';
 import 'package:fitsApp/Todo/todos.dart';
+import 'package:fitsApp/Todo/widget/completed_list_widget.dart';
+import 'package:fitsApp/Todo/widget/todo_list_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'api.dart';
-import 'todo.dart';
 import 'widget/add_todo_dialog_widget.dart';
-import 'widget/completed_list_widget.dart';
-import 'widget/todo_list_widget.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Todo App With Firebase'),
+        title: Text('Todo'),
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Theme.of(context).primaryColor,

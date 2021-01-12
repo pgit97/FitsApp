@@ -1,6 +1,7 @@
+import 'package:fitsApp/Todo/todos.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../todos.dart';
+
 import 'todo_form_widget.dart';
 import 'package:fitsApp/Todo/todo.dart';
 
